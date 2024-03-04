@@ -1,0 +1,16 @@
+s1={12,13,15,16}
+s2={12,13,100,200}
+print(f"union:{s1.union(s2)}")
+print(f"union:{s1|(s2)}")
+print(f"intersection:{s1.intersection(s2)}")
+print(f"intersection:{s1&(s2)}")
+print(f"difference:{s1.difference(s2)}")
+print(f"diiference:{s1-s2}")
+print(f"symmetric_difference:{s1.symmetric_difference(s2)}")
+print(f"symmetric_diiference:{s1-s2}")
+s1.symmetric_difference_update(s2)
+print(f"symmetric_difference_update:{s1}")
+#s1=S1^s2
+s1.difference_update(s2)
+#s1=s1-s2
+print(f"diiference_update:{s1}")
